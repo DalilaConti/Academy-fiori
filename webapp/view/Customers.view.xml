@@ -2,11 +2,13 @@
     <Page id="page" title="{i18n>title}">
         <content>
 
-           
+           <VBox id="_IDGenVBox1">
                 <Title id="_IDGenTitle1" text="{i18n>subtitle}"></Title>
  
           <!-->
-                <Table id="idProductsTable" inset="false" items="{ path:'/Customers'}">
+                <Table id="idProductsTable" 
+                inset="false" 
+                items="{ path:'/Customers'}">
                     <columns>
                         <Column id="columnTable" width="12em">
                             <Text id="textcolumn" text="Nombre"/>
@@ -22,7 +24,7 @@
                 </Table>
            
            <-->
-        
+        </VBox>
         </content>
     </Page>
 </mvc:View>

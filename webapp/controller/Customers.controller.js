@@ -8,8 +8,24 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("globant.customers.controller.Customers", {
+
             onInit: function () {
 
+                const  oModel = this.getOwnerComponent().getModel();
+
+                console.log("-----------------");
+                console.log(oModel);
+
+                oModel.read("/Orders", {
+                    succes: function(oData) {
+                        console.log(oData);
+                    },
+                    error: function ( error ){
+                        
+                    }
+                })
+
             }
+
         });
     });

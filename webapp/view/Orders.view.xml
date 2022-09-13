@@ -1,0 +1,29 @@
+<mvc:View controllerName="globant.customers.controller.Orders" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+
+           <VBox id="_IDGenVBox1">
+                <Title id="_IDGenTitle1" text="{i18n>subtitle}"></Title>
+ 
+          
+                <Table id="idProductsTable" inset="false" items="{ path:'Orders>/'}">
+                    <columns>
+                        <Column id="columnTable" width="12em">
+                            <Text id="textcolumn" text="Nombre"/>
+                        </Column>
+                    </columns>
+                    
+                        <ColumnListItem id="columnList" vAlign="Middle" type="Navigation" press=".onPress">
+                            <cells>
+                                <ObjectIdentifier id="object" title="{Orders>OrderID}" text="{Orders>ShipAddress}"/>
+                            </cells>
+                        </ColumnListItem>
+                    
+                </Table>
+           </VBox>
+           
+           
+        
+        </content>
+    </Page>
+</mvc:View>

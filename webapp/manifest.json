@@ -99,6 +99,13 @@
           "target": [
             "TargetCustomers"
           ]
+        },
+        {
+          "name": "RouteOrders",
+          "pattern": "orders/{CustomerID}",
+          "target": [
+            "TargetOrders"
+          ]
         }
       ],
       "targets": {
@@ -108,6 +115,13 @@
           "clearControlAggregation": false,
           "viewId": "Customers",
           "viewName": "Customers"
+        },
+        "TargetOrders": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Orders",
+          "viewName": "Orders"
         }
       }
     },

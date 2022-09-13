@@ -17,7 +17,7 @@ sap.ui.define([
                 console.log(oModel);
 
                 oModel.read("/Orders", {
-                    succes: function(oData) {
+                    success: function(oData) {
                         console.log(oData);
                     },
                     error: function ( error ){

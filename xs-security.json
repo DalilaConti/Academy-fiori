@@ -2,6 +2,20 @@
   "xsappname": "globantcustomers",
   "tenant-mode": "dedicated",
   "description": "Security profile of called application",
-  "scopes": [],
-  "role-templates": []
+  "scopes": [
+    {
+      "name":"$XSAPPNAME.Visualizador",
+      "description": "Visualizador"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Visualizador",
+      "description": "Visualizador",
+      "scope-references": [
+        "$XSAPPNAME.Visualizador"
+      ]
+
+    }
+  ]
 }
